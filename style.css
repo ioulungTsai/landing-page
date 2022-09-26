@@ -3,3 +3,32 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer,
+.information,
+.quote,
+.contact {
+  flex: 1;
+}
+
+header,
+footer {
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+
+.quote {
+  background-color: #E5E7EB;
+}
+
+.information-images {
+  display: flex;
+}
