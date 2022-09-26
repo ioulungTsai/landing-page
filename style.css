@@ -24,11 +24,10 @@ a {
 
 header,
 footer,
-.information,
 .quote,
 .contact {
   display: flex;
-  flex:1;
+  flex: 1;
 }
 
 header {
@@ -92,7 +91,34 @@ header {
 }
 
 .header-content > img {
-  width: 500px;
+  object-fit: scale-down;
+  max-width: 100%;
+}
+
+.information > h2 {
+  font-size: 36px;
+  margin: 48px;
+  text-align: center;
+}
+
+.information-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.information-images > div {
+  width: 200px;
+  text-align: center;
+}
+
+.information-images img {
+  border: 4px solid #3882F6;
+  border-radius: 16px;
+}
+
+.information-images p {
+  text-align: center;
 }
 
 header,
@@ -103,8 +129,5 @@ footer {
 
 .quote {
   background-color: #E5E7EB;
-}
-
-.information-images {
-  display: flex;
+  height: 1000px;
 }
