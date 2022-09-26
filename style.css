@@ -27,7 +27,6 @@ footer,
 .quote,
 .contact {
   display: flex;
-  /* flex: 1; */
 }
 
 header {
@@ -146,4 +145,38 @@ footer {
   font-weight: 700;
   font-size: 24px;
   text-align: end;
+}
+
+.contact {
+  flex: 1 0 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  background-color: #3882F6;
+  border-radius: 16px;
+  width: 1000px;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-text {
+  color: #F9FAF8;
+}
+
+.contact-text > p {
+  stop-color: #E5E7EB;
+  font-weight: 300;
+}
+
+.contact button {
+  font-size: 20px;
+  color: #F9FAF8;
+  background-color: #3882F6;
+  border: 2px solid #F9FAF8;
+  border-radius: 10px;
+  padding: 6px 36px;
 }
