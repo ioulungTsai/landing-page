@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +11,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header,
@@ -16,7 +27,72 @@ footer,
 .information,
 .quote,
 .contact {
-  flex: 1;
+  display: flex;
+  flex:1;
+}
+
+header {
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+}
+
+.header-container {
+  width: 60%;
+}
+
+.header-logo,
+.header-logo>ul,
+.header-content {
+  display: flex;
+}
+
+.header-logo {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 96px;
+}
+
+.header-logo > ul {
+  font-size: 18px;
+  color: #E5E7EB;
+  font-weight: 400;
+  gap: 24px;
+}
+
+.header-content {
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+
+.header-content_text {
+  width: 480px;
+}
+
+.header-content_text > h1 {
+  font-size: 48px;
+}
+
+.header-content_text > p {
+  color:  #E5E7EB;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.header-content_text > button {
+  background-color: #3882F6;
+  font-size: 18px;
+  color: #E5E7EB;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+
+.header-content > img {
+  width: 500px;
 }
 
 header,
